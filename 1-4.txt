@@ -1,0 +1,32 @@
+# 1-4 : to achieve a function 'iota' : to accept parameter 'n' (n is natural number) and return '[0, ..., n - 1]'
+# Input : n
+# Output : range(-1,n-1)
+# e.g. :input(5) , output : [0,1,2,3,4]
+
+
+#My opinion
+
+def iota(n):
+    result = 0
+    a = list(range(n))
+    if n == 0:
+        result = []
+    elif n >= 1:
+        result = a
+    return result
+
+n = int(input())
+result = iota(n)
+print(result)
+
+# The standard answer
+
+def iota(n):
+  result = []
+  for i in range(n):
+    result.append(i)
+return result 
+
+n = int(input())
+result = iota(n)
+print(result)
