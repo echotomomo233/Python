@@ -1,0 +1,19 @@
+# 1-5 : to achieve a function 'arr_min' : to accept parameter 'arr' (arr is an array of integers) and return min(arr)
+# Input : n (n = len(arr) & n >= 1) , enter an integer per line in n lines
+# Output : min(arr)
+# e.g. :input :3 , [666,233,8023] , output : [233]
+
+
+def  arr_min(arr):
+  min = arr[0]    # loop through 'arr' and find the min parameter
+  for a in arr:
+    if a < min:
+      min = a
+  return min
+
+n = int(input())
+arr = []
+for i in range(n):
+  arr.append(int(input()))
+result = arr_min(arr)
+print(result)
