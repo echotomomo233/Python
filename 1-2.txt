@@ -1,4 +1,4 @@
-# 1-2 : to achieve a function: 'sum_n' : 输入 n，返回 1+2+...+n 的结果
+# 1-2 : to achieve a function: 'sum_n'
 # input : n
 # output : sum(range(0,n))
 # e.g. : input(5) , output(1+2+3+4+5)=output(15)
