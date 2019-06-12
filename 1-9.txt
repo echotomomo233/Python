@@ -1,0 +1,21 @@
+# 1-9 : to achieve a function 'is_prime' : to judge if the positive number 'n' are Prime number.if right, return 'True', or return 'False'
+# Input : n (n is a positive number)
+# Output : 'True' or 'False'
+# e.g. :input :233 , output : True
+
+
+
+def is_prime(n):
+    for a in range(2,n):
+        if n % a == 0:
+            return False
+        return True
+
+    if n == 1:
+        return False
+    if n == 2:
+        return True
+
+n = int(input())
+print(is_prime(n))
+
