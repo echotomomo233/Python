@@ -1,0 +1,44 @@
+# 1-7 : to achieve a function 'reverse' : Input a three-digit positive integer 'a' and the last digit is not '0'. Output a positive number 'n' and it's the result of a reverse 
+# Input : n (n=100a+10b+c)
+# Output : (100c+10b+a)
+# e.g. :input :123 , output : 321
+
+
+# At the begining, I want to used 'stack', but F
+
+class Stack:
+    def __init__(self):
+        self.item = []
+
+    def stack_push(self,element):
+        self.items.append(element)
+
+    def pop(self):
+        return self.item.pop()
+
+def reverse(n):
+    a = Stack(n)
+    while len(a) > 0:
+        print(pop())
+
+n = int(input(n))
+print(reverse(n))
+
+
+
+# And I find the only result is to change the number to achieve it.And succeed.
+
+def reverse(n):
+    a = 0
+    b = 0
+    c = 0
+    l = 0
+    if n % 10 > 0:
+        a = n // 100
+        b = (n // 10) % 10
+        c = n % 10
+        l = c * 100 + b * 10 + a
+    return l
+
+n = int(input())
+print(reverse(n))
