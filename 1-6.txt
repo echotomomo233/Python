@@ -1,0 +1,21 @@
+# 1-6 : to achieve a function 'cummulative_sum' : to accept parameter 'arr' (arr is an array of integers) and return array 'r' to ensure 'r[i] == arr[0] + arr[1] + ... + arr[i]'
+# Input : n (n = len(arr) & n >= 1) , [1,2,3,...,n]
+# Output : arr(r)=[arr[0], arr[0] + arr[1], ..., arr[0] + arr[1] + ... + arr[i]]
+# e.g. :input :5 , [1,2,3,4,5] , output : [1, 3, 6, 10, 15]
+
+
+def cummulative_sum(arr):
+    r = []
+    for i in range(len(arr)):
+        if len(r) == 0:
+            r.append(arr[i])
+        elif len(r) >= 1:
+            r.append(r[-1] + arr[i])
+    return r
+
+n = int(input())
+arr = []
+for i in range(n):
+  arr.append(int(input()))
+r = cummulative_sum(arr)
+print(r)
