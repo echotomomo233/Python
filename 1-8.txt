@@ -1,0 +1,25 @@
+# 1-6 : to achieve a function 'exp' : to accept parameter 'epsilon' (epsilon is a positive decimal )
+# and calculate 'exp(x)': 'exp(x) ¡Ö 1 + x + x^2/2! + ... + x^i / i! + ... + x^n / n!'
+# Point:a_i = x^i / i!(0 <= i <= n)
+# to achieve 'exp(x) ¡Ö a_0 + ... a_k' & '|a_k| < epsilon'
+
+# Input :Enter a decimal in the first line, enter 'x' in the second line
+# Output : exp(x), (output a result of retain 6 decimal places & print `"%.6f" % result` )
+# e.g. :input :0.0001 , 1 , output : 2.718279
+
+
+def exp(epsilon, x):
+    e = 0
+    cur = 1
+    n = 1
+    while cur >= epsilon:
+        e += cur
+        cur = cur * x / n
+        n += 1
+    e += cur
+    return e
+
+epsilon = float(input())
+x = float(input())
+result = exp(epsilon, x)
+print("%.6f" % result)
