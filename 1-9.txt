@@ -1,7 +1,7 @@
 # 1-9 : to achieve a function 'is_prime' : to judge if the positive number 'n' are Prime number.if right, return 'True', or return 'False'
 # Input : n (n is a positive number)
 # Output : 'True' or 'False'
-# e.g. :input :233 , output : True
+# e.g.: input :233 , output : True
 
 
 
