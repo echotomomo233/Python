@@ -1,0 +1,16 @@
+# 2-1 : to achieve a function 'len_last_word' : 
+# Print string 's' ('s' is composed of Capital Letters, Lowercase and Space), and output length of the last word.
+# If there isn't such word and return 0
+# Input : string 's'
+# Output : length of the last word
+# e.g. :input :sweet heart , output : 5
+
+def len_last_word(s):
+for c in s 
+
+len(s) - 
+
+
+
+s = input()
+print(len_last_word(s))
