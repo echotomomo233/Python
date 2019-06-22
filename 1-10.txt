@@ -2,7 +2,7 @@
 # Return a tuple (i, j), i != j, if array[i] + array[j] == a
 # Return None if such tuple do not exist.
 # Input: array with non-negative integers within [0, 999],, and a non-negative integer 'a'
-# Output: tuple (i, j)£¬or 'None'
+# Output: tuple (i, j) or 'None'
 # e.g.1: input: [], 1   output: None
 # e.g.2: input: [1,1,3], 4   output: (0, 2)
 
